@@ -1,0 +1,19 @@
+{
+    "dataset": "boston",
+    "model": {
+        "layers": [50],
+        "mode": "proposed",
+        "prior_type": ["manual", "xavier"],
+        "prior_var": 1e-2,
+        "batch_size": 10,
+        "learning_rate": 5e-3,
+        "lambda": 1e-3,
+        "n_epochs": 50,
+        "warmup_updates": 100,
+        "anneal_updates": 1e3,
+        "gradient_clip": 0.0
+    },
+    "n_runs": 20,
+    "train_split": 0.9,
+    "seed": 1
+}
